@@ -1,10 +1,29 @@
-import district from './district'
-import officer from './officer'
-import event from './event'
-import servedCounty from './servedCounty'
-import siteSettings from './siteSettings'
-import aboutPage from './aboutPage'
-import missionPage from './missionPage'
+import district from './district';
+import officer from './officer';
+import event from './event';
+import church from './church';
+import siteSettings from './siteSettings';
+import servedCounty from './servedCounty';
+import aboutPage from './aboutPage';
+import missionPage from './missionPage';
+import historyPage from './historyPage';
+import leadershipPage from './leadershipPage';
+import bylawsPage from './bylawsPage';
+import resourceCategory from './resourceCategory';
 
 export const schemaTypes = [
-    district, officer, event, servedCounty, siteSettings,aboutPage,missionPage]
+  // Collections
+  district,
+  officer,
+  event,
+  church,
+  servedCounty,
+  resourceCategory,
+  // Singletons
+  siteSettings,
+  aboutPage,
+  missionPage,
+  historyPage,
+  leadershipPage,
+  bylawsPage,
+];
