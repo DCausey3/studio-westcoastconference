@@ -15,6 +15,9 @@ export default defineType({
       name: 'district',
       title: 'District',
       type: 'string',
+        options: {
+            list: ['Lakeland District', 'St. Petersburg District', 'Tampa District'],
+        },
       description: 'Free-text district label (e.g. "Tampa District") as used on the Churches page filters.',
     }),
     defineField({ name: 'pastor', title: 'Pastor', type: 'string' }),

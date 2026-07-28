@@ -22,6 +22,18 @@ export default defineType({
       type: 'number',
       description: 'Controls display order across the site (ascending).',
     }),
+      defineField({
+          name: 'heroImage',
+          title: 'Hero Image',
+          type: 'image',
+          options: { hotspot: true },
+          description: 'Large banner image shown at the top of this district\'s page',
+      }),
+      defineField({
+          name: 'nickname',
+          title: 'Nickname',
+          type: 'text',
+      }),
     defineField({
       name: 'counties',
       title: 'Counties Served',
