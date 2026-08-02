@@ -33,6 +33,25 @@ export default defineType({
             type: 'number',
             validation: (Rule) => Rule.required(),
         }),
+        // Add/update these two fields on your existing gallery image schema
+// (whatever type currently powers the homepage ImageCarousel).
+
+        defineField({
+            name: 'district',
+            title: 'District',
+            type: 'string',
+            description: 'Set this to show the photo ONLY on that district\'s page carousel. Leave blank if this photo isn\'t district-specific.',
+            options: {
+                list: ['Lakeland District', 'St. Petersburg District', 'Tampa District'],
+            },
+        }),
+        defineField({
+            name: 'showOnHomepage',
+            title: 'Show on Homepage Gallery',
+            type: 'boolean',
+            description: 'Turn on to also feature this photo in the main homepage gallery, regardless of whether it\'s tagged to a district.',
+            initialValue: false,
+        }),
     ],
     preview: {
         select: { title: 'label', media: 'image' },

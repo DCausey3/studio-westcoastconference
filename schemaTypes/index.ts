@@ -10,6 +10,9 @@ import historyPage from './historyPage';
 import leadershipPage from './leadershipPage';
 import bylawsPage from './bylawsPage';
 import resourceCategory from './resourceCategory';
+import {scholarship} from "./scholarship";
+import {districtDocument} from "./districtdocument";
+import galleryImage from "./GalleryImage";
 
 export const schemaTypes = [
   // Collections
@@ -26,4 +29,7 @@ export const schemaTypes = [
   historyPage,
   leadershipPage,
   bylawsPage,
+    scholarship,
+    districtDocument,
+    galleryImage
 ];
